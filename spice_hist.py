@@ -10,7 +10,7 @@ dec_array = range(df['Dec'].min(),df['Dec'].max(), 200000000)
 hex_array = [hex(x) for x in dec_array]
 
 fig, ax = plt.subplots(figsize=(10,10))
-plt.hist(df['Dec'], bins=10)
+plt.hist(df['Dec'], bins=20)
 plt.xlim(xmin=df['Dec'].min(), xmax = df['Dec'].max())
 ax.ticklabel_format(useOffset=False, style='plain')
 plt.xticks(dec_array, hex_array, rotation=45)
