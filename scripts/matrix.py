@@ -19,7 +19,7 @@ def good_multiply(A, B):
     #Improved multiplication method
     npdot = np.dot(A, B)
 
-def bad_multipy(A, B):
+def bad_multiply(A, B):
     badmultiply = [[0 for x in range(300)] for y in range(700)] 
     for i in range(len(A)): 
         for j in range(len(B[0])): 
@@ -33,19 +33,19 @@ def printinfo():
     print('Python version: ', cpuinfo.get_cpu_info()['python_version'])
     print('Architecture: ', cpuinfo.get_cpu_info()['arch'])
     print('Brand Name: ', cpuinfo.get_cpu_info()['brand_raw'])
-    print('RAM: ', cpuinfo.get_cpu_info()['l3_cache_size'])
+    print('RAM: ', cpuinfo.get_cpu_info()['l3_cache_size']) 
     print('L2 cache: ', cpuinfo.get_cpu_info()['l2_cache_size'])
     print('L1 cache: ', cpuinfo.get_cpu_info()['l1_data_cache_size'])
 
 def goodjob(dtypes):
-    for i in range(10):
+    for i in range(5):
         start_time = time.time()
         A, B = dtypes
         good_multiply(A, B)
         print(f"--- {(time.time() - start_time)} seconds ---")
 
 def badjob(dtypes):
-    for i in range(10):
+    for i in range(5):
         start_time = time.time()
         A, B = dtypes
         bad_multiply(A, B)
