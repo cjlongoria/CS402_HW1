@@ -19,7 +19,7 @@ def good_multiply(A, B):
     #Improved multiplication method
     npdot = np.dot(A, B)
 
-def bad_multiply(A, B):
+def bad_multipy(A, B):
     badmultiply = [[0 for x in range(300)] for y in range(700)] 
     for i in range(len(A)): 
         for j in range(len(B[0])): 
