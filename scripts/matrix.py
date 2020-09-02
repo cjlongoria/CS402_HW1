@@ -2,6 +2,7 @@ import numpy as np
 import time
 import cpuinfo
 import platform
+import psutil
 
 def create_matrix_int():
     #Matrix of ints
@@ -33,6 +34,7 @@ def printinfo():
     print('Python version: ', cpuinfo.get_cpu_info()['python_version'])
     print('Architecture: ', cpuinfo.get_cpu_info()['arch'])
     print('Brand Name: ', cpuinfo.get_cpu_info()['brand_raw'])
+    print('RAM:  ', psutil.virtual_memory().total)
     print('L3 cache: ', cpuinfo.get_cpu_info()['l3_cache_size']) 
     print('L2 cache: ', cpuinfo.get_cpu_info()['l2_cache_size'])
     print('L1 cache: ', cpuinfo.get_cpu_info()['l1_data_cache_size'])
