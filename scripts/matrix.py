@@ -52,13 +52,16 @@ def badjob(dtypes):
         print(f"--- {(time.time() - start_time)} seconds ---")
 
 
+print('---------------------------------------------------------------')
 print('Using the column by row multiplication method')
 print('Integer matrix multiplication')
 badjob(create_matrix_int())
 print()
 print('Double float matrix multiplication')
 badjob(create_matrix_dfloat())
+print()
 print('---------------------------------------------------------------')
+Print()
 print('Using a new and improved multiplication method (numpy dot product)')
 print('Integer matrix multiplication')
 goodjob(create_matrix_int())
@@ -66,4 +69,5 @@ print()
 print('Double float matrix multiplication')
 goodjob(create_matrix_dfloat())
 
+print('-----------------System Info-----------------')
 printinfo()
