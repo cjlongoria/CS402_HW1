@@ -20,7 +20,7 @@ The spice.din file has 66538 reads and writes. The tex.din file has 104513 reads
 
 <br>
 
-Check out the [python script](#scripts/matrix.py)
+Check out the [python script](scripts/matrix.py)
 
 <br>
 
