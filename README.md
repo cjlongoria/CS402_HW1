@@ -90,7 +90,7 @@ Check out the [python script](scripts/matrix.py). I continued this script to inc
 |Integer| 49.134 | 59.483 | 10.349
 |Double Float| 47.892| 52.070| 4.178
 
-Comparing the two machines; PC 1 ran faster in both integer matrix multiplication (~21% faster) and double float matrix multiplication (~8.7% faster). 
+Comparing the two machines; PC 1 ran faster in both integer matrix multiplication (1.21 times faster) and double float matrix multiplication (1.09 times faster). 
 <br>
 <br>
 I found it interesting that double float matrix multiplication was a faster operation on both machines compared to integer matrix multiplication. Prior to measuring the results I thought it would be the reverse. Some quick post-experiment research indicates this is a Python quirk that many people have experienced.
@@ -98,3 +98,32 @@ I found it interesting that double float matrix multiplication was a faster oper
 <br>
 
 ### Is the performance ratio the same as the clock rate ratio of the two systems (5)? Explain. Based on the retail price of the two systems, which one is more cost effective (5)? 
+<br>
+The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performace ratio between PC 1 and PC 2 is 1.21 for the integer matrix and 1.09 for the double float matrix. 
+<br>
+<br>
+However, the clock rate ratio is considered static for both programs. This would be the clock rate of PC 1 divided by the clock rate of PC 2. The clock rate for PC 1 is 1.9 Ghz and the clock rate for PC 2 is 1.3 Ghz. Therefore, the clock rate ratio is 1.46 (1.9 Ghz/1.3Ghz).
+<br>
+<br>
+The performance ratio does not match the clock rate ratio because there are more factors to take into consideration when measuring performance. Primarily, the clock cycles per instruction (CPI). This factor is dependent on the CPU's architecture and the compiler used. 
+<br>
+<br>
+The price for PC 1 (make, model) is $XXXXX and the price for PC 2 (make, model) is $XXXXX. Using the performance ratio we found above we would place the price of PC 1 between $XXXX-$XXXX. Since that is not the case, if you were to judge these two PCs based soley on compute power, PC 2 would be the better choice.
+<br>
+<br>
+
+###  (b) Change your multiplication algorithm and repeat the steps above; for instance, if you used the the naive multiplication algorith with the column in the inner loop, then just use the same algorithm with the row in the inner loop (same scoring as part a).
+<br>
+<br>
+
+Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisy the requirements for Question 2 of this homework. 
+
+<br>
+<br>
+
+### Make sure your work includes a description of the two systems (manufacturer, CPU type, amount of memory, operating system, etc.) and of the compiler used (5). Attach the source code, the tables with your time measurements for your work, and a link to your repository such that we can check-out the code, build, and execute (5). 
+
+<br>
+<br>
+
+All my data and scripts are included in this zip. You can check out the repository at https://github.com/cjlongoria/CS402_HW1
