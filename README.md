@@ -20,7 +20,7 @@ The spice.din file has 66538 reads and writes. The tex.din file has 104513 reads
 
 <br>
 
-Check out the [python script](scripts/matrix.py)
+Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisy the requirements for Question 2 of this homework. 
 
 <br>
 
@@ -37,7 +37,8 @@ Check out the [python script](scripts/matrix.py)
 | 3| 56.26367497444153
 | 4| 46.05574727058411
 | 5| 45.77602243423462
-|**Average**| 
+|**Average**| **49.1340642929077**
+
 
 <br>
 
@@ -50,7 +51,7 @@ Check out the [python script](scripts/matrix.py)
 | 3| 47.89726066589356
 | 4| 47.64024353027344
 | 5| 47.01181340217590
-|**Average**| 
+|**Average**| **47.8918682575226**
 
 <br>
 <br>
@@ -64,7 +65,7 @@ Check out the [python script](scripts/matrix.py)
 | 3|  60.5311424732208
 | 4|  58.5471210479736
 | 5|  59.4799921512604
-|**Average**| 
+|**Average**| **59.4828192234039**
 
 <br>
 
@@ -77,4 +78,23 @@ Check out the [python script](scripts/matrix.py)
 | 3|  51.29845762252808
 | 4|  50.91303920745850
 | 5|  53.61081385612488
-|**Average**| 
+|**Average**| **52.0699208259583**
+
+<br>
+<br>
+
+#### **Performance Comparison**
+
+| Matrix Type| Average PC 1 runtime (seconds)| Average PC 2 runtime (seconds)| Delta (seconds)|
+|--------|:--------:|:--------:|:----:|
+|Integer| 49.134 | 59.483 | 10.349
+|Double Float| 47.892| 52.070| 4.178
+
+Comparing the two machines; PC 1 ran faster in both integer matrix multiplication (~21% faster) and double float matrix multiplication (~8.7% faster). 
+<br>
+<br>
+I found it interesting that double float matrix multiplication was a faster operation on both machines compared to integer matrix multiplication. Prior to measuring the results I thought it would be the reverse. Some quick post-experiment research indicates this is a Python quirk that many people have experienced.
+
+<br>
+
+### Is the performance ratio the same as the clock rate ratio of the two systems (5)? Explain. Based on the retail price of the two systems, which one is more cost effective (5)? 
