@@ -1,35 +1,35 @@
 ---------------------------------------------------------------
 Using the column by row multiplication method
 Integer matrix multiplication
---- 59.38375234603882 seconds ---
---- 59.472088098526 seconds ---
---- 60.531142473220825 seconds ---
---- 58.54712104797363 seconds ---
---- 59.479992151260376 seconds ---
+--- 41.97942566871643 seconds ---
+--- 41.557299852371216 seconds ---
+--- 41.56851863861084 seconds ---
+--- 41.92781352996826 seconds ---
+--- 41.98966026306152 seconds ---
 
 Double float matrix multiplication
---- 53.35340619087219 seconds ---
---- 51.17388725280762 seconds ---
---- 51.298457622528076 seconds ---
---- 50.913039207458496 seconds ---
---- 53.61081385612488 seconds ---
+--- 38.339619874954224 seconds ---
+--- 38.32662868499756 seconds ---
+--- 38.776578426361084 seconds ---
+--- 38.24934792518616 seconds ---
+--- 38.102004289627075 seconds ---
 
 ---------------------------------------------------------------
 
 Using a new and improved multiplication method (numpy dot product)
 Integer matrix multiplication
---- 0.059674978256225586 seconds ---
---- 0.05960273742675781 seconds ---
---- 0.06307840347290039 seconds ---
---- 0.06051015853881836 seconds ---
---- 0.060476064682006836 seconds ---
+--- 0.044840097427368164 seconds ---
+--- 0.044298648834228516 seconds ---
+--- 0.044983863830566406 seconds ---
+--- 0.04472494125366211 seconds ---
+--- 0.04457521438598633 seconds ---
 
 Double float matrix multiplication
---- 0.006094932556152344 seconds ---
---- 0.0010693073272705078 seconds ---
---- 0.001102447509765625 seconds ---
---- 0.002208709716796875 seconds ---
---- 0.009525775909423828 seconds ---
+--- 0.002059459686279297 seconds ---
+--- 0.0013976097106933594 seconds ---
+--- 0.0013942718505859375 seconds ---
+--- 0.001421213150024414 seconds ---
+--- 0.001417398452758789 seconds ---
 -----------------System Info-----------------
 OS:  Linux
 Release:  5.4.0-45-generic
