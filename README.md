@@ -28,57 +28,57 @@ Check out the [python script](scripts/matrix.py). I continued this script to inc
 
 <br>
 
-#### **Integer Matrix Table (Computer 1)**
+#### **Integer Matrix Table (PC 1)**
 
 | Trial | Runtime (seconds)       
 | ----|-------------:
-| 1| 48.50329279899597 
-| 2| 49.07158398628235       
-| 3| 56.26367497444153
-| 4| 46.05574727058411
-| 5| 45.77602243423462
-|**Average**| **49.1340642929077**
+| 1| 44.6271789073944 
+| 2| 47.1883685588837     
+| 3| 47.3448393344879
+| 4| 48.0673696994782
+| 5| 47.1904964447022
+|**Average**| **46.8836505889893**
 
 
 <br>
 
-#### **Double Float Matrix Table (Computer 1)**
+#### **Double Float Matrix Table (PC 1)**
 
 | Trial | Runtime (seconds)       
 | ----|-------------:
-| 1| 48.60213255882263 
-| 2| 48.30789113044739       
-| 3| 47.89726066589356
-| 4| 47.64024353027344
-| 5| 47.01181340217590
-|**Average**| **47.8918682575226**
+| 1| 49.2166802883148
+| 2| 49.6764869689941 
+| 3| 49.6632924079895
+| 4| 49.3716456890106
+| 5| 49.098571062088
+|**Average**| **49.4053352832794**
 
 <br>
 <br>
 
-#### **Integer Matrix Table (Computer 2)**
+#### **Integer Matrix Table (PC 2)**
 
 | Trial | Runtime (seconds)       
 | ----|-------------:
-| 1|  59.3837523460388
-| 2|  59.4720880985260    
-| 3|  60.5311424732208
-| 4|  58.5471210479736
-| 5|  59.4799921512604
-|**Average**| **59.4828192234039**
+| 1|  41.9794256687164
+| 2|  41.5572998523712   
+| 3|  41.5685186386108
+| 4|  41.9278135299683
+| 5|  41.9896602630615
+|**Average**| **41.8045435905457**
 
 <br>
 
-#### **Double Float Matrix Table (Computer 2)**
+#### **Double Float Matrix Table (PC 2)**
 
 | Trial | Runtime (seconds)       
 | ----|-------------:
-| 1|  53.35340619087219
-| 2|  51.17388725280762      
-| 3|  51.29845762252808
-| 4|  50.91303920745850
-| 5|  53.61081385612488
-|**Average**| **52.0699208259583**
+| 1|  38.3396198749542
+| 2|  38.3266286849976    
+| 3|  38.7765784263611
+| 4|  38.2493479251862
+| 5|  38.1020042896271
+|**Average**| **38.3588358402252**
 
 <br>
 <br>
@@ -87,28 +87,28 @@ Check out the [python script](scripts/matrix.py). I continued this script to inc
 
 | Matrix Type| Average PC 1 runtime (seconds)| Average PC 2 runtime (seconds)| Delta (seconds)|
 |--------|:--------:|:--------:|:----:|
-|Integer| 49.134 | 59.483 | 10.349
-|Double Float| 47.892| 52.070| 4.178
+|Integer| 46.88365 | 41.80454 | XXXXXXX
+|Double Float| 49.40534 | 38.35884| XXXXXX
 
-Comparing the two machines; PC 1 ran faster in both integer matrix multiplication (1.21 times faster) and double float matrix multiplication (1.09 times faster). 
+Comparing the two machines; PC 2 ran faster in both integer matrix multiplication (XXXX times faster) and double float matrix multiplication (XXXXX times faster). 
 <br>
 <br>
-I found it interesting that double float matrix multiplication was a faster operation on both machines compared to integer matrix multiplication. Prior to measuring the results I thought it would be the reverse. Some quick post-experiment research indicates this is a Python quirk that many people have experienced.
+I found it interesting that double float matrix multiplication was a faster operation on PC 2 compared to integer matrix multiplication. Prior to measuring the results I thought it would be the reverse. Some quick post-experiment research indicates this is a Python quirk that many people have experienced.
 
 <br>
 
 ### Is the performance ratio the same as the clock rate ratio of the two systems (5)? Explain. Based on the retail price of the two systems, which one is more cost effective (5)? 
 <br>
-The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performace ratio between PC 1 and PC 2 is 1.21 for the integer matrix and 1.09 for the double float matrix. 
+The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performace ratio between PC 2 and PC 1 is XXXX for integer matrix multiplication and XXXX for double float matrix multiplication
 <br>
 <br>
 However, the clock rate ratio is considered static for both programs. This would be the clock rate of PC 1 divided by the clock rate of PC 2. The clock rate for PC 1 is 1.9 Ghz and the clock rate for PC 2 is 1.3 Ghz. Therefore, the clock rate ratio is 1.46 (1.9 Ghz/1.3Ghz).
 <br>
 <br>
-The performance ratio does not match the clock rate ratio because there are more factors to take into consideration when measuring performance. Primarily, the clock cycles per instruction (CPI). This factor is dependent on the CPU's architecture and the compiler used. 
+The performance ratio does not match the clock rate ratio because there are more factors to take into consideration when measuring performance. Primarily, the clock cycles per instruction (CPI). This factor is dependent on the CPU's architecture. 
 <br>
 <br>
-The price for PC 1 (make, model) is $XXXXX and the price for PC 2 (make, model) is $XXXXX. Using the performance ratio we found above we would place the price of PC 1 between $XXXX-$XXXX. Since that is not the case, if you were to judge these two PCs based soley on compute power, PC 2 would be the better choice.
+The price for PC 1 (lenovo thinkpad t490s 20NYS) is $1700.00 and the price for PC 2 (HP Laptop 15-dy1071wm) is $650.00. Since PC 2 had a better performance ratio and a cheaper cost it is a more cost effective option.
 <br>
 <br>
 
@@ -116,7 +116,7 @@ The price for PC 1 (make, model) is $XXXXX and the price for PC 2 (make, model) 
 <br>
 <br>
 
-Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisy the requirements for Question 2 of this homework. 
+Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisy the requirements for Question 2 of this homework. The time measurements for all trials are listed here [Measurements](data/Tables.ods)
 
 <br>
 <br>
@@ -124,6 +124,8 @@ Check out the [python script](scripts/matrix.py). I continued this script to inc
 ### Make sure your work includes a description of the two systems (manufacturer, CPU type, amount of memory, operating system, etc.) and of the compiler used (5). Attach the source code, the tables with your time measurements for your work, and a link to your repository such that we can check-out the code, build, and execute (5). 
 
 <br>
+<br>
+XXXXX   ADD IN TABLE FOR PC DESCRIPTIONS XXXXXX
 <br>
 
 All my data and scripts are included in this zip. You can check out the repository at https://github.com/cjlongoria/CS402_HW1
