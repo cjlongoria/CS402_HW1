@@ -85,12 +85,12 @@ Check out the [python script](scripts/matrix.py). I continued this script to inc
 
 #### **Performance Comparison**
 
-| Matrix Type| Average PC 1 runtime (seconds)| Average PC 2 runtime (seconds)| Delta (seconds)|
-|--------|:--------:|:--------:|:----:|
-|Integer| 46.88365 | 41.80454 | XXXXXXX
-|Double Float| 49.40534 | 38.35884| XXXXXX
+| Matrix Type| Average PC 1 runtime (seconds)| Average PC 2 runtime (seconds)| 
+|--------|:--------:|:--------:|
+|Integer| 46.88365 | 41.80454 
+|Double Float| 49.40534 | 38.35884
 
-Comparing the two machines; PC 2 ran faster in both integer matrix multiplication (XXXX times faster) and double float matrix multiplication (XXXXX times faster). 
+Comparing the two machines; PC 2 ran faster in both integer matrix multiplication (1.1215 times faster) and double float matrix multiplication (1.288 times faster). 
 <br>
 <br>
 I found it interesting that double float matrix multiplication was a faster operation on PC 2 compared to integer matrix multiplication. Prior to measuring the results I thought it would be the reverse. Some quick post-experiment research indicates this is a Python quirk that many people have experienced.
@@ -99,13 +99,13 @@ I found it interesting that double float matrix multiplication was a faster oper
 
 ### Is the performance ratio the same as the clock rate ratio of the two systems (5)? Explain. Based on the retail price of the two systems, which one is more cost effective (5)? 
 <br>
-The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performace ratio between PC 2 and PC 1 is XXXX for integer matrix multiplication and XXXX for double float matrix multiplication
+The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performace ratio between PC 2 and PC 1 is 1.1215 for integer matrix multiplication and 1.288 for double float matrix multiplication
 <br>
 <br>
 However, the clock rate ratio is considered static for both programs. This would be the clock rate of PC 1 divided by the clock rate of PC 2. The clock rate for PC 1 is 1.9 Ghz and the clock rate for PC 2 is 1.3 Ghz. Therefore, the clock rate ratio is 1.46 (1.9 Ghz/1.3Ghz).
 <br>
 <br>
-The performance ratio does not match the clock rate ratio because there are more factors to take into consideration when measuring performance. Primarily, the clock cycles per instruction (CPI). This factor is dependent on the CPU's architecture. 
+The performance ratio does not match the clock rate ratio because there are more factors to take into consideration when measuring performance. Primarily, the clock cycles per instruction (CPI). This factor is dependent on the CPU's architecture. If this was not the case then, PC 2 (instead of PC 1) should be the faster PC with a performance ratio of 1.46.
 <br>
 <br>
 The price for PC 1 (lenovo thinkpad t490s 20NYS) is $1700.00 and the price for PC 2 (HP Laptop 15-dy1071wm) is $650.00. Since PC 2 had a better performance ratio and a cheaper cost it is a more cost effective option.
@@ -125,7 +125,22 @@ Check out the [python script](scripts/matrix.py). I continued this script to inc
 
 <br>
 <br>
-XXXXX   ADD IN TABLE FOR PC DESCRIPTIONS XXXXXX
+
+| Spec | PC 1 | PC 2 | 
+|:--------|:--------|:--------
+| OS | Windows | Linux 
+| Release | 10 | 5.4.0-45-generic 
+| Version | 10.0.18362 | Ubuntu 
+| Python Version | 3.8.2.final.0 (64 bit) | 3.8.2.final.0 (64 bit) 
+| Architecture | X86_64 | X86_64 
+| Brand Name | Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz 
+| RAM | 32 GB | 8 GB 
+
+<br>
+
+Since I used Python. The code is compiled by the 'Python Version' listed in the above chart.
+
+<br>
 <br>
 
 All my data and scripts are included in this zip. You can check out the repository at https://github.com/cjlongoria/CS402_HW1
