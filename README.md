@@ -7,7 +7,7 @@
 <img src="images/Hw1_hist1_tex.png">
 
 ### Comment based on the histograms (5). 
-It is interesting that the histograms look similiar even though they are different programs. I believe this is the case because grouping addresses together allows for a speed up in execution. I'm not sure why both programs have a large gap in memory addresses.
+It is interesting that the histograms look similar even though they are different programs. I believe this is the case because grouping addresses together allows for a speed up in execution. I'm not sure why both programs have a large gap in memory addresses.
 
 ### (b) What is the frequency of writes (5)? What is the frequency of reads (5)? Please comment on these results (5). 
 
@@ -20,7 +20,7 @@ The spice.din file has 66538 reads and writes. The tex.din file has 104513 reads
 
 <br>
 
-Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisy the requirements for Question 2 of this homework. 
+Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisfy the requirements for Question 2 of this homework. 
 
 <br>
 
@@ -99,7 +99,7 @@ I found it interesting that double float matrix multiplication was a faster oper
 
 ### Is the performance ratio the same as the clock rate ratio of the two systems (5)? Explain. Based on the retail price of the two systems, which one is more cost effective (5)? 
 <br>
-The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performace ratio between PC 2 and PC 1 is 1.1215 for integer matrix multiplication and 1.288 for double float matrix multiplication
+The performance ratio, briefly mentioned above, is simply the time for one pc to execute a program divided by the time for a second pc to run the same program. Using the data above the performance ratio between PC 2 and PC 1 is 1.1215 for integer matrix multiplication and 1.288 for double float matrix multiplication
 <br>
 <br>
 However, the clock rate ratio is considered static for both programs. This would be the clock rate of PC 1 divided by the clock rate of PC 2. The clock rate for PC 1 is 1.9 Ghz and the clock rate for PC 2 is 1.3 Ghz. Therefore, the clock rate ratio is 1.46 (1.9 Ghz/1.3Ghz).
@@ -112,11 +112,11 @@ The price for PC 1 (lenovo thinkpad t490s 20NYS) is $1700.00 and the price for P
 <br>
 <br>
 
-###  (b) Change your multiplication algorithm and repeat the steps above; for instance, if you used the the naive multiplication algorith with the column in the inner loop, then just use the same algorithm with the row in the inner loop (same scoring as part a).
+###  (b) Change your multiplication algorithm and repeat the steps above; for instance, if you used the the naive multiplication algorithm with the column in the inner loop, then just use the same algorithm with the row in the inner loop (same scoring as part a).
 <br>
 <br>
 
-Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisy the requirements for Question 2 of this homework. The time measurements for all trials are listed here [Measurements](data/Tables.ods)
+Check out the [python script](scripts/matrix.py). I continued this script to include a new multiplication method to satisfy the requirements for Question 2 of this homework. The time measurements for all trials are listed here [Measurements](data/Tables.ods)
 
 <br>
 <br>
