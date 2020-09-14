@@ -14,7 +14,7 @@ It is interesting that the histograms look similar even though they are differen
 <img src="images/Hw1_bar_spice.png">
 <img src="images/Hw1_bar_tex.png">
 
-The spice.din file has 66538 reads and writes. The tex.din file has 104513 reads and writes. I did not think that the read and write actions would be equal in both files. Prior to this I thought there would be more read operations than write operations.
+The spice.din file has 150699 reads and 66538 writes. The tex.din file has 130655 reads and 104513 writes. This makes sense as there are numerous read commands to move between the data stored in the program's registers vs actually writing information to memory.
 
 ### 2. (a) Write a program, using your favorite programming language, that multiplies two rectangular matrices -- please no square matrices -- whose elements are randomly generated. You will have two versions of the program, one in which matrix elements are integers and another one where they are real numbers (double) (2x15 points). 
 
